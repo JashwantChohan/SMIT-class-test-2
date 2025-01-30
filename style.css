@@ -17,8 +17,9 @@
     overflow: hidden;
 }
 
-.left, .right {
-    flex: 1 1 50%; 
+.left,
+.right {
+    flex: 1 1 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,41 +44,51 @@
     background-color: white;
 }
 
+.form {
+    background-color: white;
+}
+
 .main h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: bold;
+    background-color: white;
 }
 
 .item {
     margin-bottom: 15px;
+    background-color: white;
 }
 
 .item input {
-    width: 100%;
+    width: 90%;
     padding: 8px 10px;
     border-radius: 10px;
     border: 1px solid #857f7f;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     margin-top: 5px;
+    background-color: white;
 }
 
 .item label {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
     display: block;
+    background-color: white;
 }
 
 .item-policy {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    background-color: white;
 }
 
 #policy {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #857f7f;
     margin-left: 10px;
+    background-color: white;
 }
 
 .signup {
@@ -85,11 +96,12 @@
     border-radius: 6px;
     background-color: #3a5b22;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 10px;
     font-weight: bold;
     border: none;
     cursor: pointer;
+    margin-top:10px ;
 }
 
 .signup:hover {
@@ -100,6 +112,7 @@
     display: flex;
     gap: 10px;
     margin-top: 20px;
+    background-color: white;
 }
 
 .signin {
@@ -111,7 +124,7 @@
     font-size: 0.8rem;
     font-weight: bold;
     border: 1px solid lightgray;
-    border-radius: 6px;
+    border-radius: 23px;
     background-color: white;
     cursor: pointer;
 }
@@ -128,18 +141,25 @@
     font-weight: bold;
 }
 
+.account>p {
+    background-color: white;
+}
+
 .account label {
+    background-color: white;
     color: blue;
     cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        /* Stack items vertically */
     }
 
     .right img {
-        border-radius: 10px 10px 0 0; /* Adjust border for stacking */
+        border-radius: 10px 10px 0 0;
+        /* Adjust border for stacking */
     }
 
     .main {
@@ -147,11 +167,13 @@
     }
 
     .buttons {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column;
+        /* Stack buttons vertically */
     }
 
     .signin {
-        margin-bottom: 10px; /* Add spacing between buttons */
+        margin-bottom: 10px;
+        /* Add spacing between buttons */
     }
 }
 
@@ -164,7 +186,8 @@
         padding: 6px;
         font-size: 0.8rem;
     }
-    .item{
+
+    .item {
         text-align: start;
     }
 
