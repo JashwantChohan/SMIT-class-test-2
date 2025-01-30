@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: auto;
+    max-width: 70%;
+    margin: 70px auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left, .right {
+    flex: 1 1 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.right {
+    background-color: white;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+    border-radius: 40px 0px 0px 40px;
+    object-fit: cover;
+}
+
+.main {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+}
+
+.main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid #857f7f;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.item label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: block;
+}
+
+.item-policy {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#policy {
+    font-size: 0.8rem;
+    color: #857f7f;
+    margin-left: 10px;
+}
+
+.signup {
+    width: 100%;
+    border-radius: 6px;
+    background-color: #3a5b22;
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.signup:hover {
+    background-color: #2e4818;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.signin {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.signin img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.account {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.account label {
+    color: blue;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .right img {
+        border-radius: 10px 10px 0 0; /* Adjust border for stacking */
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .signin {
+        margin-bottom: 10px; /* Add spacing between buttons */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main h3 {
+        font-size: 1.2rem;
+    }
+
+    .item input {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+    .item{
+        text-align: start;
+    }
+
+    .signup {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .signin {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+
+    #policy {
+        font-size: 0.7rem;
+    }
+}
