@@ -154,37 +154,42 @@
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
-        /* Stack items vertically */
     }
 
     .right img {
         border-radius: 10px 10px 0 0;
-        /* Adjust border for stacking */
     }
 
     .main {
         text-align: center;
     }
+    .item {
+        text-align: start;
+    }
 
     .buttons {
         flex-direction: column;
-        /* Stack buttons vertically */
     }
 
     .signin {
         margin-bottom: 10px;
-        /* Add spacing between buttons */
     }
 }
 
 @media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
     .main h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .item input {
         padding: 6px;
-        font-size: 0.8rem;
+        font-size: 0.4rem;
+    }
+    .item label {
+        font-size: 0.6rem;
     }
 
     .item {
@@ -202,6 +207,6 @@
     }
 
     #policy {
-        font-size: 0.7rem;
+        font-size: 0.4rem;
     }
 }
